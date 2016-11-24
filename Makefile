@@ -16,13 +16,13 @@ BUILD = build/
 SOURCE = source/
 
 # The name of the output file to generate.
-TARGET = kernel.img
+TARGET = kernel7.img
 
 # The name of the assembler listing file to generate.
-LIST = kernel.list
+LIST = kernel7.list
 
 # The name of the map file to generate.
-MAP = kernel.map
+MAP = kernel7.map
 
 # The name of the linker script to use.
 LINKER = kernel.ld
