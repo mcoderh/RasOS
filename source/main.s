@@ -26,11 +26,10 @@ loop$:
 	.unreq pinNum
 	.unreq pinVal
 
-	mov r2, #0x3F0000
-	wait1$:
-		sub r2, #1
-		cmp r2, #0
-	bne wait1$
+	delay .req r0
+	ldr delay, =100000
+	bl Wait
+	.unreq delay
 
 	pinNum .req r0
 	pinVal .req r1
@@ -40,10 +39,9 @@ loop$:
 	.unreq pinNum
 	.unreq pinVal
 
-	mov r2, #0x3F0000
-	wait2$:
-		sub r2, #1
-		cmp r2, #0
-	bne wait2$	
+	delay .req r0
+	ldr delay, =100000
+	bl Wait
+	.unreq delay
 
 b loop$
